@@ -3,6 +3,7 @@ export const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
+  { label: 'CP', href: '#cp' },
   { label: 'Contact', href: '#contact' }
 ];
 
@@ -31,21 +32,55 @@ export const skillGroups = [
 
 export const projects = [
   {
-    title: 'LinkStock AI',
-    description: 'AI-powered FMCG supply chain platform built for smarter route optimization, voice ordering, inventory tracking and retailer orchestration.',
-    stack: ['Next.js', 'FastAPI', 'OpenAI', 'MongoDB'],
-    features: ['AI Route Optimization', 'Voice Ordering', 'Retailer Management', 'Inventory Tracking', 'Smart Delivery'],
+    title: 'MedCredit',
+    description: 'A polished web experience focused on modern design and smooth user interaction for a credit-related product.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    features: ['Responsive UI', 'Fast Performance', 'Modern Landing Experience'],
     github: '#',
-    demo: '#'
+    demo: 'https://medcreditt.vercel.app/',
+    status: 'Deployed'
   },
   {
-    title: 'Neural Studio',
-    description: 'A premium generative AI workspace for rapid prototyping, experimentation, and product demos.',
-    stack: ['React', 'Node.js', 'OpenAI', 'MySQL'],
-    features: ['Prompt Experiments', 'Live Collaboration', 'Analytics Dashboard'],
+    title: 'Career Goal',
+    description: 'A clean and goal-oriented web platform designed to present career-focused content with a professional interface.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    features: ['Professional UI', 'Clean Navigation', 'Responsive Design'],
     github: '#',
-    demo: '#'
+    demo: 'https://career-goal-mu.vercel.app/',
+    status: 'Deployed'
+  },
+  {
+    title: 'Perfume Web 3',
+    description: 'An immersive and visually rich perfume landing page built with a modern aesthetic and polished animations.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    features: ['Elegant Design', 'Animation-Driven UI', 'Modern Branding'],
+    github: '#',
+    demo: 'https://perfume-web-three.vercel.app/',
+    status: 'Deployed'
+  },
+  {
+    title: 'Sudoku Game in C++',
+    description: 'A console-based Sudoku game built in C++ with interactive gameplay and logic-driven puzzle solving.',
+    stack: ['C++'],
+    features: ['Interactive Gameplay', 'Logic-Based Puzzles', 'Console Interface'],
+    github: '#',
+    demo: '',
+    status: 'Planned for deployment'
+  },
+  {
+    title: 'Number Guessing Game in C++',
+    description: 'A simple and fun number guessing game implemented in C++ for learning and practicing core programming logic.',
+    stack: ['C++'],
+    features: ['Simple Gameplay', 'Beginner-Friendly', 'Core Logic Practice'],
+    github: '#',
+    demo: '',
+    status: 'Planned for deployment'
   }
+];
+
+export const competitiveProgramming = [
+  { platform: 'LeetCode', focus: 'Daily problem solving and strengthening data structures and algorithms.' },
+  { platform: 'Codeforces', focus: 'Competitive programming practice through contests and timed problem-solving.' }
 ];
 
 export const stats = [

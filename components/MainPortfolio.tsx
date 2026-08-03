@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Download, Mail, Github, Linkedin, Sparkles, Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { navItems, skillGroups, projects, stats, experiences, achievements, certifications } from '@/data/content';
+import { navItems, skillGroups, projects, stats, experiences, achievements, certifications, competitiveProgramming } from '@/data/content';
 import { AnimatedSphere } from '@/components/AnimatedSphere';
 import { CursorGlow } from '@/components/CursorGlow';
 import { ScrollProgress } from '@/components/ScrollProgress';
@@ -175,12 +175,40 @@ export function MainPortfolio() {
               <div className="mt-5 flex flex-wrap gap-3">
                 {project.features.map((feature) => <span key={feature} className="text-sm text-cyan">• {feature}</span>)}
               </div>
-              <div className="mt-6 flex gap-3">
-                <a href={project.github} className="rounded-full border border-white/15 px-4 py-2 text-sm text-white/80">GitHub</a>
-                <a href={project.demo} className="rounded-full bg-white/10 px-4 py-2 text-sm text-white/90">Live Demo</a>
+              <div className="mt-5 flex flex-wrap items-center gap-2">
+                <span className={`rounded-full px-3 py-1 text-xs font-medium ${project.status === 'Deployed' ? 'bg-cyan/15 text-cyan' : 'bg-white/10 text-white/70'}`}>
+                  {project.status}
+                </span>
+              </div>
+              <div className="mt-6 flex flex-wrap gap-3">
+                {project.github && project.github !== '#' ? (
+                  <a href={project.github} target="_blank" rel="noreferrer" className="rounded-full border border-white/15 px-4 py-2 text-sm text-white/80">GitHub</a>
+                ) : (
+                  <span className="rounded-full border border-white/10 px-4 py-2 text-sm text-white/50">GitHub soon</span>
+                )}
+                {project.demo ? (
+                  <a href={project.demo} target="_blank" rel="noreferrer" className="rounded-full bg-white/10 px-4 py-2 text-sm text-white/90">Live Demo</a>
+                ) : (
+                  <span className="rounded-full bg-white/10 px-4 py-2 text-sm text-white/60">Live demo soon</span>
+                )}
               </div>
             </motion.article>
           ))}
+        </div>
+      </section>
+
+      <section id="cp" className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+        <div className="glass rounded-[1.8rem] p-8 sm:p-10">
+          <p className="text-sm uppercase tracking-[0.3em] text-cyan">Competitive Programming</p>
+          <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">I&apos;m actively sharpening my problem-solving skills on LeetCode and Codeforces.</h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {competitiveProgramming.map((item) => (
+              <div key={item.platform} className="rounded-[1.2rem] border border-white/10 bg-black/20 p-6">
+                <p className="text-xl font-semibold text-white">{item.platform}</p>
+                <p className="mt-2 text-sm leading-7 text-white/70">{item.focus}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
