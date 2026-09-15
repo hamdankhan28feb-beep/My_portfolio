@@ -3,14 +3,35 @@ node_modules/
 
 # Next.js build
 .next/
+out/
+dist/
 
 # Environment variables
 .env
 .env.local
+.env.*.local
 
-# Build output
-out/
-dist/
+# Python virtual environments
+.venv/
+venv/
+env/
 
-# Logs
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
 *.log
+tmp/
+temp/
+
+# Build artifacts
+tsconfig.tsbuildinfo
