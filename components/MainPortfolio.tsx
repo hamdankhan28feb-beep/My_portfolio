@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Mail, Github, Linkedin, Sparkles, Menu, X } from 'lucide-react';
+import { ArrowRight, Download, Mail, Github, Linkedin, Sparkles, Menu, X, GraduationCap } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { navItems, skillGroups, projects, stats, experiences, achievements, certifications, competitiveProgramming } from '@/data/content';
 import { AnimatedSphere } from '@/components/AnimatedSphere';
@@ -254,7 +254,7 @@ export function MainPortfolio() {
           <p className="text-sm uppercase tracking-[0.3em] text-cyan">Achievements</p>
           <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">Recognition shaped by curiosity, execution, and impact.</h2>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
           {achievements.map((item, index) => (
             <motion.div key={item.title} initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.06 }} className="glass rounded-[1.4rem] p-6">
               <h3 className="text-xl font-semibold text-white">{item.title}</h3>
@@ -274,6 +274,15 @@ export function MainPortfolio() {
                 <a href="mailto:muhammadhamdan@example.com" className="flex items-center gap-3"><Mail size={18} /> muhammadhamdan@example.com</a>
                 <a href="https://github.com" className="flex items-center gap-3"><Github size={18} /> GitHub</a>
                 <a href="https://linkedin.com" className="flex items-center gap-3"><Linkedin size={18} /> LinkedIn</a>
+              </div>
+              <div className="mt-8 rounded-2xl border border-cyan/20 bg-cyan/5 p-5">
+                <div className="flex items-center gap-2 text-cyan">
+                  <GraduationCap size={18} />
+                  <p className="text-sm font-semibold">Available for Career Counseling &amp; Mentorship</p>
+                </div>
+                <p className="mt-3 text-sm leading-7 text-white/70">
+                  Whether you&apos;re a student exploring CS/AI or someone looking to break into tech — I&apos;d love to help guide your journey. Reach out through the form or drop me an email.
+                </p>
               </div>
             </div>
             <form className="space-y-4 rounded-[1.4rem] border border-white/10 bg-black/25 p-6">

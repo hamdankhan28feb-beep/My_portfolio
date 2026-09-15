@@ -32,6 +32,24 @@ export const skillGroups = [
 
 export const projects = [
   {
+    title: 'Dwellify',
+    description: 'A modern home and property platform with a clean, intuitive interface for real-estate browsing.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    features: ['Property Listings', 'Clean Browsing UI', 'Responsive Design'],
+    github: 'https://github.com/hamdankhan28feb-beep/Dwellify',
+    demo: '',
+    status: 'In Progress'
+  },
+  {
+    title: 'GPA Calculator',
+    description: 'An interactive KU GPA calculator built on the official numeric → alphabetic → grade-point scale with live updates.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    features: ['Live GPA Calculation', 'Official KU Grading Scale', 'Client-Side Performance'],
+    github: 'https://github.com/hamdankhan28feb-beep/GPA-calculator',
+    demo: 'https://gpa-calculator-rouge.vercel.app/',
+    status: 'Deployed'
+  },
+  {
     title: 'MedCredit',
     description: 'A polished web experience focused on modern design and smooth user interaction for a credit-related product.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
@@ -84,13 +102,15 @@ export const competitiveProgramming = [
 ];
 
 export const stats = [
-  { label: 'Projects', value: 12 },
+  { label: 'Projects', value: 14 },
   { label: 'Hackathons', value: 5 },
   { label: 'Technologies', value: 18 },
   { label: 'Certifications', value: 7 }
 ];
 
 export const experiences = [
+  { title: 'Skill Box — Chemistry & CS Instructor', date: '2025 — Present', description: 'Teaching Chemistry and Computer Science at Skill Box, a local learning center, blending theory with hands-on practice.' },
+  { title: 'Home Tutor', date: '2024 — Present', description: 'Teaching students from Sindh Board and Federal Board, grades 9–12, covering core science and math subjects.' },
   { title: 'EXLR Hackathon', date: '2025', description: 'Built a high-impact solution around intelligent automation and product thinking.' },
   { title: 'Bootcamp', date: '2024', description: 'Accelerated hands-on development in web, AI, and product engineering.' },
   { title: 'Volunteer Experience', date: '2024', description: 'Collaborated with student communities to host workshops and technical events.' },
@@ -98,6 +118,7 @@ export const experiences = [
 ];
 
 export const achievements = [
+  { title: 'OTF Scholar', description: 'Awarded the Orange Tree Foundation scholarship for academic excellence and leadership potential.' },
   { title: 'Hackathons', description: 'Built smart products under tight timelines for competitive innovation.' },
   { title: 'AI Projects', description: 'Delivered AI-driven solutions spanning automation, analytics, and interfaces.' },
   { title: 'Open Source', description: 'Contributed to collaborative engineering and reusable developer tooling.' },
