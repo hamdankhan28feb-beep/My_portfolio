@@ -12,14 +12,13 @@
     "@react-three/fiber": "^9.0.0",
     "@types/three": "^0.170.0",
     "clsx": "^2.1.1",
-    "emailjs-com": "^3.0.1",
     "framer-motion": "^11.11.9",
     "gsap": "^3.13.0",
     "lenis": "^1.2.0",
     "lucide-react": "^0.468.0",
-    "next": "15.3.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "next": "15.5.25",
+    "react": "19.1.9",
+    "react-dom": "19.1.9",
     "three": "^0.170.0"
   },
   "devDependencies": {
@@ -27,8 +26,14 @@
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.25",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.2"
+  },
+  "overrides": {
+    "postcss": "$postcss"
+  },
+  "allowScripts": {
+    "sharp": true
   }
 }
