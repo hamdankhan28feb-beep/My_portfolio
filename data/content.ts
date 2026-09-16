@@ -32,6 +32,15 @@ export const skillGroups = [
 
 export const projects = [
   {
+    title: 'Aashna',
+    description: 'A real-time American Sign Language recognition platform running deep-learning models in the browser — currently being built for the Alibaba Cloud AI Hackathon Pakistan 2026.',
+    stack: ['React', 'TypeScript', 'TensorFlow.js', 'MediaPipe', 'Firebase'],
+    features: ['Real-Time Sign Recognition', 'In-Browser Deep Learning', 'Gemini-Powered Practice'],
+    github: 'https://github.com/hamdankhan28feb-beep/Aashna-',
+    demo: '',
+    status: 'In Progress'
+  },
+  {
     title: 'Dwellify',
     description: 'A modern home and property platform with a clean, intuitive interface for real-estate browsing.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
@@ -102,7 +111,7 @@ export const competitiveProgramming = [
 ];
 
 export const stats = [
-  { label: 'Projects', value: 14 },
+  { label: 'Projects', value: 15 },
   { label: 'Hackathons', value: 5 },
   { label: 'Technologies', value: 18 },
   { label: 'Certifications', value: 7 }
