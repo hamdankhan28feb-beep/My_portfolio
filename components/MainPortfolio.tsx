@@ -91,6 +91,7 @@ export function MainPortfolio() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a href="#contact" className="rounded-full border border-cyan/30 bg-cyan/10 px-6 py-3 text-sm font-medium text-cyan transition hover:scale-105">Contact Me</a>
               <a href="#projects" className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white/90 transition hover:scale-105">View Projects</a>
+              <a href="/Hamdan_CV.pdf" download className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white/90 transition hover:scale-105"><Download size={16} /> Download CV</a>
             </div>
             <div className="mt-10 flex flex-wrap gap-3 text-sm text-white/60">
               {['Building AI Products', 'Machine Learning', 'Web Development', 'Problem Solver', 'Hackathon Builder'].map((item) => (
