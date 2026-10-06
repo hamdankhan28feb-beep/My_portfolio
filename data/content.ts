@@ -37,7 +37,7 @@ export const projects = [
     stack: ['React', 'TypeScript', 'TensorFlow.js', 'MediaPipe', 'Firebase'],
     features: ['Real-Time Sign Recognition', 'In-Browser Deep Learning', 'Gemini-Powered Practice'],
     github: 'https://github.com/hamdankhan28feb-beep/Aashna-',
-    demo: '',
+    demo: 'https://aashna-asl.vercel.app/',
     status: 'In Progress'
   },
   {

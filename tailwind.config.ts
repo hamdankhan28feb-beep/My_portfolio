@@ -1,28 +1,53 @@
 import type { Config } from 'tailwindcss';
 
 export default {
+  darkMode: 'class',
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './sections/**/*.{ts,tsx}'],
   theme: {
     extend: {
       colors: {
-        midnight: '#050505',
-        navy: '#081120',
-        violet: '#7c3aed',
-        blue: '#2563eb',
-        cyan: '#22d3ee',
+        background: 'hsl(var(--background) / <alpha-value>)',
+        foreground: 'hsl(var(--foreground) / <alpha-value>)',
+        primary: {
+          DEFAULT: 'hsl(var(--primary) / <alpha-value>)',
+          foreground: 'hsl(var(--primary-foreground) / <alpha-value>)'
+        },
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary) / <alpha-value>)',
+          foreground: 'hsl(var(--secondary-foreground) / <alpha-value>)'
+        },
+        muted: {
+          DEFAULT: 'hsl(var(--muted) / <alpha-value>)',
+          foreground: 'hsl(var(--muted-foreground) / <alpha-value>)'
+        },
+        accent: {
+          DEFAULT: 'hsl(var(--accent) / <alpha-value>)',
+          foreground: 'hsl(var(--accent-foreground) / <alpha-value>)'
+        },
+        card: {
+          DEFAULT: 'hsl(var(--card) / <alpha-value>)',
+          foreground: 'hsl(var(--card-foreground) / <alpha-value>)'
+        },
+        border: 'hsl(var(--border) / <alpha-value>)',
+        input: 'hsl(var(--input) / <alpha-value>)',
+        ring: 'hsl(var(--ring) / <alpha-value>)',
+        destructive: 'hsl(var(--destructive) / <alpha-value>)'
+      },
+      fontFamily: {
+        pixel: ['var(--font-pixel)', 'monospace'],
+        body: ['var(--font-body)', 'monospace']
+      },
+      borderWidth: {
+        pixel: 'var(--border-width)'
       },
       boxShadow: {
-        glow: '0 0 0 1px rgba(255,255,255,0.05), 0 0 50px rgba(34,211,238,0.15)'
+        pixel: 'var(--shadow-offset) var(--shadow-offset) 0 0 hsl(var(--foreground) / 0.8)',
+        'pixel-press': 'var(--shadow-press) var(--shadow-press) 0 0 hsl(var(--foreground) / 0.8)',
+        'pixel-lg': 'var(--shadow-lift) var(--shadow-lift) 0 0 hsl(var(--foreground) / 0.8)',
+        'pixel-xl': 'var(--shadow-hover) var(--shadow-hover) 0 0 hsl(var(--foreground) / 0.8)'
       },
-      animation: {
-        'float-slow': 'float 6s ease-in-out infinite',
-        'float-fast': 'float 3.6s ease-in-out infinite'
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-12px)' }
-        }
+      borderRadius: {
+        pixel: 'var(--radius)'
       }
     }
   },
