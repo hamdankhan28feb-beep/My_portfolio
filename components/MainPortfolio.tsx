@@ -488,6 +488,9 @@ export function MainPortfolio() {
                 </div>
                 <h3 className="pixel-subtitle mb-3">{item.platform}</h3>
                 <p className="text-gray-700 dark:text-gray-300">{item.focus}</p>
+                <a href={item.href} target="_blank" rel="noopener noreferrer" className="pixel-button pixel-outline mt-5 inline-flex px-4 py-2 text-[10px]">
+                  View Profile
+                </a>
               </div>
             ))}
           </div>

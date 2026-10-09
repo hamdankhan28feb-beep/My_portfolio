@@ -106,8 +106,16 @@ export const projects = [
 ];
 
 export const competitiveProgramming = [
-  { platform: 'LeetCode', focus: 'Daily problem solving and strengthening data structures and algorithms.' },
-  { platform: 'Codeforces', focus: 'Competitive programming practice through contests and timed problem-solving.' }
+  {
+    platform: 'LeetCode',
+    focus: 'Daily problem solving and strengthening data structures and algorithms.',
+    href: 'https://leetcode.com/u/m_hamdan28/'
+  },
+  {
+    platform: 'Codeforces',
+    focus: 'Competitive programming practice through contests and timed problem-solving.',
+    href: 'https://codeforces.com/profile/m_hamdan'
+  }
 ];
 
 export const stats = [
